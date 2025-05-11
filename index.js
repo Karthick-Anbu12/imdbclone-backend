@@ -8,7 +8,7 @@ const { MongoClient, ObjectId } = require("mongodb")
 const app=express();
 dotenv.config()
 const secretkey = process.env.SECRETKEY
-const url = process.env.URL
+const URL = process.env.URL
 
 app.use(cors({
     origin: 'https://gilded-muffin-662416.netlify.app'
