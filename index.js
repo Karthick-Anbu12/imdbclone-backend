@@ -6,10 +6,11 @@ const dotenv = require("dotenv")
 const cors = require("cors")
 const { MongoClient, ObjectId } = require("mongodb")
 const app=express();
-const URL="mongodb+srv://karthickleo2121:0oKLqrjqxeby6EVE@imdb.mymenvx.mongodb.net/?retryWrites=true&w=majority&appName=User"
-const secretkey="ajksdnhuagyt26562"
+const secretkey = process.env.SECRETKEY
+const URL = process.env.URL
+
 app.use(cors({
-    origin: '*'
+    origin: 'https://gilded-muffin-662416.netlify.app'
 }))
 const userSchema = new mongoose.Schema({
     email: String,
