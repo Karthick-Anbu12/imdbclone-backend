@@ -11,7 +11,7 @@ const secretkey = process.env.SECRETKEY
 const url = process.env.URL
 
 app.use(cors({
-    origin: 'https://gilded-muffin-662416.netlify.app/'
+    origin: 'https://gilded-muffin-662416.netlify.app'
 }))
 const userSchema = new mongoose.Schema({
     email: String,
